@@ -5,11 +5,15 @@ Downloads subtitles for video files given preferred language.
 
 Can be used in an object-oriented fashion or in procedural format.
 
-The file 'tests.php' runs unit-tests for most common situations. Feel free to contribute.
+The file 'tests.php' runs unit-tests for most common situations.
+
+Feel free to contribute.
 
 ## Examples
 ### Object-oriented style
 	try {
+		$sub = new subtitleDownloader();
+	
 		//SETS THE PATH TO THE VIDEO FILE
 		$sub->setVideofile(__DIR__.'/tests/alesinicio/Easysubtitle/justified.mp4');
 		
@@ -34,7 +38,6 @@ The file 'tests.php' runs unit-tests for most common situations. Feel free to co
 	}
 
 ### Procedural styles
-	//THE WHOLE THING THROWS EXCEPTIONS ON ERRORS, SO KEEP EVERYTHING IN A TRY/CATCH BLOCK.
 	try {
 		//SETS THE PATH TO THE VIDEO FILE
 		$strVideofile		= __DIR__.'/tests/alesinicio/Easysubtitle/justified.mp4';

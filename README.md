@@ -12,7 +12,7 @@ Feel free to contribute.
 ## Examples
 ### Object-oriented style
 	try {
-		$sub = new subtitleDownloader();
+		$sub = new EasysubtitleDownloader();
 	
 		//SETS THE PATH TO THE VIDEO FILE
 		$sub->setVideofile(__DIR__.'/tests/alesinicio/Easysubtitle/justified.mp4');

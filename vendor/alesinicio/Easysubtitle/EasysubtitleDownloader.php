@@ -89,7 +89,7 @@ class EasysubtitleDownloader {
 	 */
 	public function downloadSubtitle($strLanguage, $strSrtSavePath=null) {
 		$apiResponse = $this->getDataFromAPIServer('download', $this->getVideofileMD5Hash(), ['language'=>$strLanguage]);
-		if ($apiResponse === null) throw new Exception('Error download subtitle.');
+		if ($apiResponse === null) throw new Exception('Error downloading subtitle.');
 		
 		$srtPath = ($strSrtSavePath !== null ? $strSrtSavePath : substr($this->videofile, 0, -3).'srt');
 
